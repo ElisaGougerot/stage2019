@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".Activities.MainActivity"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="1">
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_centerInParent="true"
+			android:layout_marginBottom="30dp"
+            android:src="@drawable/rounded_logo"/>
+
+        <TextView
+            android:text="GhostButler"
+            android:textColor="#000"
+            android:textSize="25dp"
+			android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"/>
+
+
+	</RelativeLayout>
+
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="2">
+
+		<Button
+			android:layout_marginTop="0dp"
+			android:textColor="#FFF"
+			android:background="@drawable/menu_button"
+			android:padding="15dp"
+			android:id="@+id/control"
+			android:text="Controler la plateforme"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_alignParentTop="true"
+			android:elevation="10dp"
+			android:textAllCaps="false"
+			/>
+
+		<Button
+			android:textColor="#FFF"
+			android:background="@drawable/menu_button"
+			android:padding="15dp"
+			android:id="@+id/tuto"
+			android:layout_below="@+id/control"
+			android:layout_marginTop="25dp"
+			android:text="Comment utiliser la plateforme ?"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+            android:elevation="10dp"
+			android:textAllCaps="false"
+			/>
+
+	</RelativeLayout>
+
+</LinearLayout>
